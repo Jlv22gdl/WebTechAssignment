@@ -30,5 +30,17 @@ function loadSection(section) {
         .catch(error => console.error('Error loading section:', error));
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('nav .fas');
+    const nav = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('show');
+    });
+});
 // Load the home section by default
 document.addEventListener('DOMContentLoaded', () => loadSection('home'));
+
+
+
+

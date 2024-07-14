@@ -538,3 +538,87 @@ form .btn2 {
 nav .fas {
     display: none;
 }
+
+nav ul {
+    display: none;
+}
+
+nav ul.show {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive layout for tablets and mobile devices */
+/* Mobile styles */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add margin between the items */
+    }
+
+    nav .fas {
+        display: block; /* Display the menu icon */
+        cursor: pointer;
+        font-size: 24px;
+        color: var(--primary-color);
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Add margin to separate logo from the menu */
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 1.2em;
+    }
+
+    .main h1 {
+        font-size: 2.5rem;
+    }
+
+    .main h3, .main p {
+        text-align: center;
+    }
+
+    .main p {
+        font-size: 1rem;
+    }
+
+    .cv-btn {
+        padding: 0.8em 2em;
+    }
+
+    #about, #services, #portfolio, #contact {
+        padding: 10% 5%;
+    }
+}
