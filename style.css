@@ -539,9 +539,9 @@ nav .fas {
     display: none;
 }
 
-nav ul {
+/* nav ul {
     display: none;
-}
+} */
 
 nav ul.show {
     display: flex;
